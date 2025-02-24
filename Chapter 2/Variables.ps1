@@ -1,7 +1,7 @@
 $MaximumHistoryCount #Automatic variable that is already predefined within Powershell -- var denoted by $ symbol
 $color
 Set-StrictMode -Version Latest #tells powershell to throw errors when good coding practices are violated
-$color #must initalize
+$color #must initalize -- will throw error after setting strict mode as shown above
 $color = 'blue'
 $color
 Get-Variable #retrieves all variables currently in memory
