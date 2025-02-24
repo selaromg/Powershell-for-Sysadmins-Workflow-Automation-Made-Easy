@@ -2,3 +2,13 @@
 #get-variable with preference name filters displays all preference variables
 
 Get-Variable -Name *Preference
+
+#generate error message
+Get-Variable -Name 'DoesNotExist'
+
+#by setting preference var ErrorActionPreference to SilentlyContinue or Ignore no error message will be displayed
+$ErrorActionPreference = 'SilentlyContinue' # BAD PRACTICE
+
+$ErrorActionPreference = 'Continue'
+
+Get-Help about_Preference_Variables # gives more information about preference variables
