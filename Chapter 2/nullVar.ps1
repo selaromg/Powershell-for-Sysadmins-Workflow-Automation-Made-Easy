@@ -2,6 +2,8 @@ Set-StrictMode -Version Latest
 
 $foo = $null
 $foo #no errors output since assigned null
+
+Get-Variable -Name foo
 $bar #after setting strictmode verbose error shows denoting that variable has not been initialized
 
 PING.EXE -n 1 dfdfdfdfd.com

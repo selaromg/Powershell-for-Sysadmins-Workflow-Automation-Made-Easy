@@ -14,7 +14,9 @@ $foo = 0.0123456789 #floating point -- double
 $foo
 $foo.GetType().name
 
-#single quotes DO NOT interpolate data where double quotes do
+$foo + $foo
+
+#single quotes DO NOT interpolate (aka variable expansion) data where double quotes do
 $color = "blue"
 "$color" #interpolated
 '$color' #not interpolated
